@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-
-  <remote name="opudon" fetch="https://github.com/opudon" revision="14" />
-  <remote name="mp" fetch="https://gitlab.com/maitreyapatni25" revision="14" />
-
-
-  <project path="device/oneplus/udon" name="android_device_oneplus_udon" remote="opudon"/>
-  <project path="device/oneplus/sm8450-common" name="android_device_oneplus_sm8450-common" remote="opudon"/>
-  <project path="hardware/oplus" name="hardware_oplus" remote="opudon"/>
-  <project path="hardware/dolby" name="hardware_dolby" remote="opudon"/>
-  <project path="kernel/oneplus/sm8450" name="android_kernel_oneplus_sm8450" remote="opudon"/>
-  <project path="kernel/oneplus/sm8450-modules" name="android_kernel_oneplus_sm8450-modules" remote="opudon"/>
-  <project path="kernel/oneplus/sm8450-devicetrees" name="android_kernel_oneplus_sm8450-devicetrees" remote="opudon"/>
-  <remove-project name="LineageOS/android_external_wpa_supplicant_8"/>
-  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="opudon"/>
-  <project path="vendor/oneplus/udon" name="vendor_oneplus_udon" remote="mp" />
-  <project path="vendor/oneplus/sm8450-common" name="vendor_oneplus_sm8450-common" remote="mp" />
   
+  <remote name="sakk" fetch="http://github.com/opace3pro/" revision="yaap-15" />
+  <remote name="sakkvt" fetch="https://codeberg.org/sakurakyuo/" revision="fifteen" />
+  <remote name="sakkoss" fetch="https://github.com/sakurakyuo-open-source" revision="fourteen" />
+  
+  <project path="device/oneplus/corvette" name="device_oneplus_corvette" remote="sakk" />
+  <project path="device/oneplus/corvette-kernel" name="device_oneplus_corvette-kernel" remote="sakk" revision="fifteen" />
+  <project path="device/oneplus/sm8650-common" name="device_oneplus_sm8650-common" remote="sakk" />
+
+  <project path="vendor/oneplus/corvette" name="vendor_oneplus_corvette" remote="sakkvt" />
+  <project path="vendor/oneplus/sm8650-common" name="vendor_oneplus_sm8650-common" remote="sakkvt" />
+
+  <!-- Kernel source is useless because we are using Prebuilt Kernel now
+       It is for make compile process working-->
+  <project path="kernel/oneplus/sm8650" name="android_kernel_oneplus_sm8650" remote="sakkoss" />
+
+  <project path="hardware/oplus" name="hardware_oplus" remote="yaap" revision="fifteen" />
+
 </manifest>
