@@ -3,10 +3,7 @@
   
   <remote name="crd" fetch="https://github.com/crdroidandroid/" revision="16.0" />
   <remote name="crd-vt" fetch="https://gitlab.com/crdroidandroid/" revision="16.0" />
-  <remote name="sakurakyuo" fetch="https://github.com/sakurakyuo/" revision="lineage-22.2" />
-  <remote  name="yaap"
-           fetch="https://github.com/yaap"
-           revision="sixteen" />
+  <remote name="sakurakyuo" fetch="https://github.com/sakurakyuo/" revision="lineage-23.0" />
 
   <project path="device/oneplus/corvette" name="android_device_oneplus_corvette" remote="crd" />
   <project path="device/oneplus/sm8650-common" name="android_device_oneplus_sm8650-common" remote="crd" />
@@ -14,19 +11,10 @@
   <project path="vendor/oneplus/corvette" name="proprietary_vendor_oneplus_corvette" remote="crd-vt" />
   <project path="vendor/oneplus/sm8650-common" name="proprietary_vendor_oneplus_sm8650-common" remote="crd-vt" />
 
-  <project path="kernel/oneplus/sm8650" name="android_kernel_oneplus_sm8650" remote="crd" revision="15.0" />
-  <project path="kernel/oneplus/sm8650-modules" name="android_kernel_oneplus_sm8650-modules" remote="crd" revision="15.0" />
+  <project path="kernel/oneplus/sm8650" name="android_kernel_oneplus_sm8650" remote="crd" />
+  <project path="kernel/oneplus/sm8650-modules" name="android_kernel_oneplus_sm8650-modules" remote="crd" />
   <project path="kernel/oneplus/sm8650-devicetrees" name="android_kernel_oneplus_sm8650-devicetrees" remote="crd" revision="15.0" />
 
   <project path="hardware/oplus" name="android_hardware_oplus" remote="sakurakyuo" />
-
-  <project path="hardware/qcom-caf/sm8650/audio/agm" name="vendor_qcom_opensource_agm-sm8650" remote="yaap" />
-  <project path="hardware/qcom-caf/sm8650/audio/graphservices" name="vendor_qcom_opensource_audioreach-graphservices-sm8650" remote="yaap" />
-  <project path="hardware/qcom-caf/sm8650/audio/pal" name="vendor_qcom_opensource_arpal-lx-sm8650" remote="yaap" />
-  <project path="hardware/qcom-caf/sm8650/audio/primary-hal" name="hardware_qcom_audio-ar-sm8650" remote="yaap" />
-  <project path="hardware/qcom-caf/sm8650/dataipa" name="vendor_qcom_opensource_dataipa-sm8650" remote="yaap" />
-  <project path="hardware/qcom-caf/sm8650/data-ipa-cfg-mgr" name="vendor_qcom_opensource_data-ipa-cfg-mgr-sm8650" remote="yaap" />
-  <project path="hardware/qcom-caf/sm8650/display" name="hardware_qcom-caf_sm8650_display" remote="yaap" />
-  <project path="hardware/qcom-caf/sm8650/media" name="hardware_qcom-caf_sm8650_media" remote="yaap" />
 
 </manifest>
