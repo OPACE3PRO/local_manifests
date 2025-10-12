@@ -11,10 +11,9 @@
   <project path="vendor/oneplus/corvette" name="proprietary_vendor_oneplus_corvette" remote="crd-vt" />
   <project path="vendor/oneplus/sm8650-common" name="proprietary_vendor_oneplus_sm8650-common" remote="crd-vt" />
 
-  <project path="kernel/oneplus/sm8650" name="android_kernel_oneplus_sm8650" remote="crd" />
-  <project path="kernel/oneplus/sm8650-modules" name="android_kernel_oneplus_sm8650-modules" remote="crd" />
-  <project path="kernel/oneplus/sm8650-devicetrees" name="android_kernel_oneplus_sm8650-devicetrees" remote="crd" revision="15.0" />
+  <project path="kernel/oneplus/sm8650" name="android_kernel_oneplus_sm8650" remote="op" revision="16.0" />
+  <project path="kernel/oneplus/sm8650-modules" name="android_kernel_oneplus_sm8650-modules" remote="op" revision="16.0" />
+  <project path="kernel/oneplus/sm8650-devicetrees" name="android_kernel_oneplus_sm8650-devicetrees" remote="op" revision="16.0" />
 
-  <project path="hardware/oplus" name="android_hardware_oplus" remote="sakurakyuo" />
-
+  <project path="hardware/oplus" name="android_hardware_oplus" remote="crd" revision="16.0-corvette" />
 </manifest>
